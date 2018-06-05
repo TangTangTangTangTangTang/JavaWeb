@@ -40,8 +40,7 @@ public class DealDeleteServlet extends HttpServlet {
 				   String sql="select * from tbb_table where id=?";
 				   PreparedStatement ps=conn.prepareStatement(sql);
 				   ps.setInt(1,id);
-				   ResultSet rs= ps.executeQuery();				   
- 				  
+				   ResultSet rs= ps.executeQuery();				   				  
 				   while(rs.next()) {
 					   id=rs.getInt("id");
 					   String name=rs.getString ("name");
@@ -49,8 +48,7 @@ public class DealDeleteServlet extends HttpServlet {
 					   int bookCount=rs.getInt ("bookCount");
 					   String author=rs.getString ("author");
 					   System.out.print(id);
-				   
-				   
+
 					   Class.forName("com.mysql.jdbc.Driver");
 					   Connection conn1 = DriverManager.getConnection("jdbc:mysql://localhost:3306/zyts?useUnicode=true&characterEncoding=UTF-8","root","1997");
 				   String sqll="insert into tbb_table1(name,price,bookCount,author,id) values(?,?,?,?,?)";
