@@ -33,7 +33,7 @@ public class DeleteServlet extends HttpServlet {
 	 */
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		// TODO Auto-generated method stub
-		response.getWriter().append("Served at: ").append(request.getContextPath());
+//		response.getWriter().append("Served at: ").append(request.getContextPath());
 		int id =Integer.valueOf(request.getParameter("id"));
 		try {
 			Class.forName("com.mysql.jdbc.Driver");

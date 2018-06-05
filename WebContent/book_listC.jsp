@@ -45,7 +45,7 @@
 			<td><b>价格</b></td>
 			<td><b>数量</b></td>
 			<td><b>作者</b></td>
-			<td><b>修改数量</b></td>
+			<td><b>修改对应列相应数据</b></td>
 			
 		</tr>
 			<%
@@ -67,8 +67,11 @@
 					<td>
 					     <form action="UpdataServlet" method="post" onsubmit="return check(this);">
 					     <input type="hidden" name="id" value="<%=book.getId()%>">
-					     <input type="text" name="bookCount" size="3">
-					     <input type="submit" value="修改" size="3" onclick="javascript:return change();">			     
+					     <input type="text" name="name" size="10" value="<%=book.getName()%>"  >
+					     <input type="text" name="price" size="3"  value="<%=book.getPrice()%>"  >
+					     <input type="text" name="bookCount" size="3"  value="<%=book.getBookCount()%>"  >
+					     <input type="text" name="author" size="10"  value="<%=book.getAuthor()%>"  >
+					     <input type="submit" value="修改" size="3" onclick="javascript:return change();" >			     
 					     </form>
 					</td>
 				</tr>

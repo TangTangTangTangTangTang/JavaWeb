@@ -17,7 +17,7 @@ request.setCharacterEncoding("utf-8");
    try{
 	   Class.forName("com.mysql.jdbc.Driver");
 	   Connection conn=DriverManager.getConnection("jdbc:mysql://localhost:3306/zyts?useUnicode=true&characterEncoding=UTF-8","root","1997");
-	   String sql="insert into tbb_table(name,price,bookCount,author) value(?,?,?,?)";
+	   String sql="insert into tbb_table(name,price,bookCount,author) values(?,?,?,?)";
 	   PreparedStatement ps=conn.prepareStatement(sql);
 	   ps.setString(1,book.getName());
 	   ps.setDouble(2,book.getPrice());

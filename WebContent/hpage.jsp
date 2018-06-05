@@ -7,10 +7,10 @@
  <link rel="stylesheet" href="css/nav_menu3.css" type="text/css" media="all" />
 </head>
 <body>
-
-<!-- <div style="width:100px; height:100px;"><img src="a/gzlogo1.png" width="100%" height="100%" /></div> -->
 <img src="photos/a.jpg" width="383" height="107"/>
 <img src="photos/lo.png"/>
+<font color="blue" size="3"> ${msg }</font>  
+<a href="login.jsp">退出</a>
 <div class="nav_menu3">
 	<ul>
 		<li class='nav-has-sub'><a href='#'>管理员信息</a>

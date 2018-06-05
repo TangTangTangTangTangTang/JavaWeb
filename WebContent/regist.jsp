@@ -43,7 +43,7 @@ background-size:cover;
 	}
 </script>
 </head>
-<br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+<br/><br/><br/><br/><br/><br/><br/><br/>
 <body>
 	<form action="RegistServlet" method="post" onsubmit="return check(this);">
 		<table align="center" width="450">

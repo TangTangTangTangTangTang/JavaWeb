@@ -42,7 +42,7 @@ background-size:cover;
 <form action="LoginServlet" method="post" onsubmit="return check(this); ">  
 
     <table valign="center",align="center">  
-    <br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+    <br/><br/><br/><br/><br/><br/><br/><br/>
     <tr> 
     <td width="66" align="right"><font size="3">账户名：</font></td><td colspan="2"><input type="text" name="accountN" style="width:200;height:25;"/></td>  
     </tr>  

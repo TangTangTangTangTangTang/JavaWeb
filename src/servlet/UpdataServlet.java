@@ -39,17 +39,26 @@ public class UpdataServlet extends HttpServlet {
 	 */
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		// TODO Auto-generated method stub
+		request.setCharacterEncoding("utf-8"); 
+		response.setContentType("text/html;charset=utf-8"); 
+		response.setCharacterEncoding("utf-8");  
 		doGet(request, response);
 		int id =Integer.valueOf(request.getParameter("id"));
+		String name =request.getParameter("name");
+		Double price = Double.parseDouble(request.getParameter("price"));
 		int bookCount =Integer.valueOf(request.getParameter("bookCount"));
-		
+		String author =request.getParameter("author");
 			try {
 				Class.forName("com.mysql.jdbc.Driver");
 				Connection conn=DriverManager.getConnection("jdbc:mysql://localhost:3306/zyts", "root", "1997");
-				String sql="update tbb_table set bookCount=? where id=?";//bookCount中的C是大写还是小写？
-				PreparedStatement ps=conn.prepareStatement(sql);
-				ps.setInt(1, bookCount);
-				ps.setInt(2, id);
+				String sql="update tbb_table set name=?,price=?,bookCount=?,author=? where id=?";/*bookCount中的C是大写还是小写？
+*/				PreparedStatement ps=conn.prepareStatement(sql);
+				ps.setString(1, name); 
+				ps.setDouble(2, price);
+				ps.setInt(3, bookCount );
+				ps.setString(4, author);
+				ps.setInt(5, id);
+				
 				ps.executeUpdate();
 				ps.close();
 				conn.close();

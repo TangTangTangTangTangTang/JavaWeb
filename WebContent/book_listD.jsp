@@ -55,7 +55,7 @@ function del() {
 					<td><%=book.getBookCount()%></td>
 					<td><%=book.getAuthor()%></td>
 					<td>
-					<a href="DeleteServlet?id=<%=book.getId()%>" onclick="javascript:return del();">删除</a>									  
+					<a href="DealDeleteServlet?id=<%=book.getId()%>" onclick="javascript:return del();">删除</a>									  
 					</td>
 				</tr>
 			<%

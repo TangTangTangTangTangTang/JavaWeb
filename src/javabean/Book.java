@@ -5,7 +5,7 @@ public class Book {
 	    // 编号
 		private int id;
 		// 图书名称
-		private String name;
+		private String name; 
 		// 价格
 		private double price;
 		// 数量

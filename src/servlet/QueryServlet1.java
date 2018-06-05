@@ -34,7 +34,7 @@ public class QueryServlet1 extends HttpServlet {
 		if(request.getParameter("page") != null){
 			currPage = Integer.parseInt(request.getParameter("page"));
 		}
-		// 实例化ProductDao
+		// 实例化Bookdao
 		Bookdao dao = new Bookdao();
 		// 查询所有商品信息
 		List<Book> list = dao.find(currPage);//返回要查找的页的容器list
