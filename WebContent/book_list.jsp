@@ -36,15 +36,15 @@
 						out.print("没有数据！");
 					}else{
 						// 遍历图书集合中的数据
-						for(Book book : list){
-			%>
-				<tr align="center" bgcolor="white">
+						 for(Book book : list){ 
+			%>				
+				 <tr align="center" bgcolor="white">
 					<td><%=book.getId()%></td>
 					<td><%=book.getName()%></td>
 					<td><%=book.getPrice()%></td>
 					<td><%=book.getBookCount()%></td>
 					<td><%=book.getAuthor()%></td>
-				</tr>
+				 </tr> 
 			<%
 					}
 				}
@@ -55,7 +55,8 @@
 			    <td align="center" colspan="5">  			    
 			        ${bar }
 			    <td>
-			</tr>		
+			</tr>	
+			<a href="hpage.jsp">主页</a>	
 	</table>
 	<table align="center">
 	           <form action="CQueryServlet" method="get" >

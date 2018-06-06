@@ -27,11 +27,6 @@ background-size:cover;
 			}
 		}
 	}
-	
-    /* function change(){  
-        var img =document.getElementById("verify");  
-        img.src="VerifyCodeServlet?a="+new Date().getTime();  
-    }   */
 
 </script>
 
@@ -41,8 +36,8 @@ background-size:cover;
 <h1>欢迎登陆</h1>  
 <form action="LoginServlet" method="post" onsubmit="return check(this); ">  
 
-    <table valign="center",align="center">  
-    <br/><br/><br/><br/><br/><br/><br/><br/>
+    <table align="center">  
+    <br/><br/><br/>
     <tr> 
     <td width="66" align="right"><font size="3">账户名：</font></td><td colspan="2"><input type="text" name="accountN" style="width:200;height:25;"/></td>  
     </tr>  

@@ -51,8 +51,8 @@ public class UpdataServlet extends HttpServlet {
 			try {
 				Class.forName("com.mysql.jdbc.Driver");
 				Connection conn=DriverManager.getConnection("jdbc:mysql://localhost:3306/zyts", "root", "1997");
-				String sql="update tbb_table set name=?,price=?,bookCount=?,author=? where id=?";/*bookCount中的C是大写还是小写？
-*/				PreparedStatement ps=conn.prepareStatement(sql);
+				String sql="update tbb_table set name=?,price=?,bookCount=?,author=? where id=?";
+				PreparedStatement ps=conn.prepareStatement(sql);
 				ps.setString(1, name); 
 				ps.setDouble(2, price);
 				ps.setInt(3, bookCount );

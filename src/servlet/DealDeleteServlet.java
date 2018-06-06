@@ -33,7 +33,6 @@ public class DealDeleteServlet extends HttpServlet {
 		//response.getWriter().append("Served at: ").append(request.getContextPath());
 		
 		int id =Integer.valueOf(request.getParameter("id"));
-
 			try {
 				Class.forName("com.mysql.jdbc.Driver");
 				Connection conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/zyts?useUnicode=true&characterEncoding=UTF-8","root","1997");	   

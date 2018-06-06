@@ -12,7 +12,11 @@
 				alert("图书名称不能为空");
 				return false;
 			}
-			if(id.value == ""){
+			if(bookCount.value == ""){
+				alert("数量不能为空");
+				return false;
+			}
+			if(price.value == ""){
 				alert("价格不能为空");
 				return false;
 			}
@@ -56,6 +60,7 @@
 					<input type="submit" value="添　加">
 				</td>
 			</tr>
+			<a href="hpage.jsp">主页</a>
 		</table>
 	</form>
 </body>
